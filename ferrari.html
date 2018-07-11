@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="ferrari.css">
+		<head>
+			<title>ferrari</title>
+						<script>
+							 window.onload=choosePic;
+								 var theAd = 0;
+								 var myPix=[ "ferrari-488.jpg","pistafront.jpg","backpista.jpg", "pistainner.jpg","pistav8.jpg"]
+								 length=myPix.length;
+								 function choosePic(){
+							 	var RandomNum= Math.floor(Math.random()* length);
+		 							document.getElementById("pista").src=myPix[RandomNum];
+		 						rotate();
+								 }
+							 function rotate(){
+		 							theAd++;
+		 				if(theAd== myPix.length){
+		 					theAd=0;
+		 				}
+			 
+							 document.getElementById("pista").src=myPix[theAd];
+					 setTimeout(rotate,3*1000);
+						}
+					</script>
+		</head>
+		<body>
+							<header>
+									<div class="banner">
+										<div class="logo">
+										<img src="FerrariLogo.png">
+										</div>
+
+														<nav>
+															<ul class="navbar">
+																<li> <a href="ferarri.html">HOME</a></li>
+																<li> <a href="#">CARS</a></li>
+																<li> <a href="#">CONTACT US</a></li>
+																<li> <a href="#">MULTIMEDIA</a></li>
+																<li> <a href="#">SIGN UP</a></li>
+															</ul>
+														</nav>
+									</div>
+							</header>
+									<div class="container">
+										<div class="container1">
+											<img src="ferrari-488.jpg"id="pista" alt="some images">
+											<div class="innertext1">
+												<p><b>488-pista</b></p>
+												<p>The ferrari 488 pista is powered by the most powerful v8 engine in the maranello marque's history and the company's special series sports car with highest level yet of technological transfer from racing.</p>
+											</div>
+											
+										</div>
+										<div class="container2">
+											<img src="488-spider.jpg">
+												<div class="innertext2">
+													<p>spider-488</p>
+													<p>Designed by the Ferrari Design Centre, the 488 Spider features radical new styling honed around its aerodynamic requirements, brilliantly reflecting the drop-top driving pleasure focus of its sportiness and performanc</p>
+
+												</div>
+										</div>
+										<div class="container3">
+											<img src="488-GTB.jpg">
+												<div class="innertext3">
+													<p>488-GTB</p>
+													<p>The 488 GTB name marks a return to the classic Ferrari model designation with the 488 in its moniker indicating the engine's unitary displacement, while the GTB stands for Gran Turismo Berlinetta</p>
+												</div>
+										</div>
+										<div class="container4">
+											<img src="GTC4Lusso.jpg">
+													<div class="innertext4">
+														<p>GTC4Lusso</p>
+														<p>Inovation, Versatiliy,Performance,Sportiness and elegance have all been given an entirely new meaning thanks to the way they merge seamlessly in the GTC4lusso</p>
+													</div>
+											</div>
+											
+									</div>
+									<div class="box">
+										<p>this is the car</p>
+									</div>
+									
+		</body>
+</html>
